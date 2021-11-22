@@ -27,6 +27,19 @@
                 </tree>
             </field>
         </record>
+
+        <record model="ir.ui.view" id="informacion_search_view">
+            <field name="name">informacion.search</field>
+            <field name="model">odoo_basico.informacion</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="descripcion"/>
+                    <field name="sexo_traducido"/>
+                </search>
+            </field>
+        </record>
+
         <record model="ir.ui.view" id="informacion_form_view">
             <field name="name">informacion.form</field>
             <field name="model">odoo_basico.informacion</field>
