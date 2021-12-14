@@ -18,6 +18,7 @@
                         <group>
                             <field name="name"/>
                             <field name="descripcion_da_lineapedido"/>
+                            <field name="informacion_ids"/>
                         </group>
                     </sheet>
                 </form>
