@@ -72,6 +72,16 @@
                                     </group>
                                 </group>
                             </page>
+                            <page string="Moedas">
+                                <group>
+                                    <field name="moeda_id"/>
+                                    <field name="gasto_en_moeda_seleccionada_polo_usuario"/>
+                                    <field name="moeda_en_texto"/>
+                                    <field name="creador_da_moeda"/>
+                                    <field name="moeda_euro_id" invisible="1"/>
+                                    <field name="gasto_en_euros"/>
+                                </group>
+                            </page>
                             <page string="Datos Binary">
                                 <group>
                                     <field name="adxunto_nome" invisible="1"/>
