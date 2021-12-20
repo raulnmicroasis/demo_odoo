@@ -14,15 +14,23 @@
             <field name="model">odoo_basico.pedido</field>
             <field name="arch" type="xml">
                 <form string="Formulario pedido">
+                    <header>
+                        <button name="actualizadorSexo" type="object"
+                                string="Actualiza o campo Sexo do modelo información"/>
+                        <button name="creaRexistroInformacion" type="object"
+                                string="Crea un rexistro no modelo información"/>
+                          <button name="actualizaRexistroInformacion" type="object"
+                                string="Actualiza o rexistro creado no modelo información"/>
+                    </header>
                     <sheet>
                         <group>
                             <field name="name"/>
                         </group>
                         <separator string="Visualizar e engadir"/>
-                        <field name="lineapedido_ids" />
+                        <field name="lineapedido_ids" mode="kanban"/>
                         <!-- Non permite editar -->
-<!--                          <separator string="Só visualizar"/>-->
-<!--                          <field name="lineapedido_ids" readonly="1"/>-->
+                        <!--                          <separator string="Só visualizar"/>-->
+                        <!--                          <field name="lineapedido_ids" readonly="1"/>-->
                     </sheet>
                 </form>
             </field>
