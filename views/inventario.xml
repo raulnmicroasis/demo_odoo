@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record model = 'ir.actions.act_window' id = 'inventario_list_action'>
+            <field name="name">Listado del inventario actual</field>
+            <field name="res_model">odoo_basico.inventario</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model = 'ir.ui.view' id = 'inventario_tree_view'>
+            <field name="name">informacion.tree</field>
+            <field name="model">odoo_basico.informacion</field>
+            <field name="arch" type="xml">
+                <tree string="Formulario Información">
+                    <field name="name"/>
+                    <field name="nombre_comercial"/>
+                    <field name="stock_actual"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

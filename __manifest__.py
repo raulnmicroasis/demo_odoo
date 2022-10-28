@@ -35,7 +35,8 @@
         'reports/report_informacion.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',
-        'security/xestion_usuarios.xml'
+        'security/xestion_usuarios.xml',
+        'views/inventario.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
